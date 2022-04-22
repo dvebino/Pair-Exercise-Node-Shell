@@ -1,7 +1,6 @@
 const fs = require('fs');
-const name = require('./bash');
 
-module.exports = function(){
+module.exports = function(name){
     fs.readFile(name,'utf8',(err, data) => {
         if (err) throw err;
         else {
